@@ -1,7 +1,7 @@
 {
   "name": "svg-to-vue",
   "description": "Utility to convert SVG code into Vue component definition",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "keywords": [
     "vue",
     "svg",
@@ -12,16 +12,15 @@
   "license": "MIT",
   "author": "Damian Stasik <npm@coded.pl>",
   "main": "index.js",
-  "peerDependencies": {
-    "vue-template-compiler": "^2.0.0"
-  },
   "dependencies": {
-    "svgo": "^1.2.0",
-    "vue-template-es2015-compiler": "^1.9.1"
+    "svgo": "^1.1.1"
   },
   "devDependencies": {
-    "eslint": "^5.16.0",
-    "eslint-config-airbnb-base": "13.1.0",
+    "eslint": "^5.13.0",
+    "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-import": "^2.16.0"
+  },
+  "peerDependencies": {
+    "vue-template-compiler": "^2.0.0"
   }
 }

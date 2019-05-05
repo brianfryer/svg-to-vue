@@ -4,7 +4,7 @@ const { compile } = require('vue-template-compiler');
 const transformChildren = (value) => {
   const chilldren = value.reduce((acc, child) => {
     if (child.text) {
-      acc.push(`_v('${child.text}')`);
+      acc.push(`_v('${escape(child.text)}')`);
     } else {
       const args = [`'${child.tag}'`];
 

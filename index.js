@@ -5,7 +5,6 @@ const transformChildren = (value) => {
   const chilldren = value.reduce((acc, child) => {
     if (child.text) {
       const text = child.text.replace(/'/g, "\\'")
-      console.log(text)
       acc.push(`_v('${text}')`);
     } else {
       const args = [`'${child.tag}'`];
